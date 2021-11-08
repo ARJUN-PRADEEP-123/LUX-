@@ -656,7 +656,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"Here is what i found for your query {search}"
-    if imdb and imdb.get('poster'):
+    if imdb and imdb.get('poster')\n 'DEVELOPER' = ['https://t.me/Arjunbots']:
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
