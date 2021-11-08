@@ -626,19 +626,16 @@ async def auto_filter(client, msg, spoll=False):
     if imdb:
         cap = IMDB_TEMPLATE.format(
           <b>🏷 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
-☀️ Languages : <code>{languages}</code>
-👥 Cast : <code>{cast}</code>
-📀 RunTime: {runtime} Minutes
-📆 Release Info : {release_date}
-🎛 Countries : <code>{countries}</code>
-👨‍🦱Developer: @Arjunbots
-            poster = imdb['poster'],
-            plot = imdb['plot'],
-            rating = imdb['rating']\n DEVELOPER : ['https://t.me/Arjunbots /n Arjun Pradeep]
-            url = imdb['url']
+          🎭 Genres: {genres}
+          📆 Year: <a href={url}/releaseinfo>{year}</a>
+          🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+          ☀️ Languages : <code>{languages}</code>
+          👥 Cast : <code>{cast}</code>
+          📀 RunTime: {runtime} Minutes
+          📆 Release Info : {release_date}
+          🎛 Countries : <code>{countries}</code>
+          👨‍🦱Developer: @Arjunbots
+
         )
     else:
         cap = f"Here is what i found for your query {search}"
