@@ -651,8 +651,7 @@ async def auto_filter(client, msg, spoll=False):
             genres = imdb['genres'],
             poster = imdb['poster'],
             plot = imdb['plot'],
-            rating = imdb['rating'],
-            DEVELOPER = ['<a href=https://t.me/Arjunbots>Arjun Pradeep</a>'],
+            rating = imdb['rating']\n DEVELOPER : ['https://t.me/Arjunbots /n Arjun Pradeep]
             url = imdb['url']
         )
     else:
